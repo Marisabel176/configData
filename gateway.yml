@@ -18,6 +18,10 @@ spring:
           uri: lb://catalog-service
           predicates:
             - Path=/api/v1/catalog/**
+        - id: msserie
+          uri: lb://serie-service
+          predicates:
+            - Path=/api/v1/series/**
 
 info:
   app:
